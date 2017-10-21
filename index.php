@@ -81,7 +81,7 @@ ob_start(); ?>
 				<div class="container-fluid">
 					<?php 
 					if ($_session["session"] != "1")  {
-					echo '<a href="<?php '.htmlspecialchars($loginUrl).' " data-icon="gear" data-iconpos="notext">Entrar</a>';
+					echo '<a href="'.htmlspecialchars($loginUrl).' " data-icon="gear" data-iconpos="notext">Entrar</a>';
 		
 					}ELSE{include("tpl/$tpl.php"); } ?>
 				</div>

@@ -14,7 +14,7 @@ $fb = new \Facebook\Facebook([
 $helper = $fb->getRedirectLoginHelper();
 
 $permissions = ['email']; // Optional permissions
-$loginUrl = $helper->getLoginUrl('https://ipromo.mx//subdominios/app/src/fb-callback.php', $permissions);
+$loginUrl = $helper->getLoginUrl('http://app.ipromo.mx/src/fb-callback.php', $permissions);
 /*Facebook*/
 
 

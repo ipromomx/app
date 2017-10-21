@@ -55,6 +55,5 @@ try {
 $user = $response->getGraphUser();
 
 $email = $user["email"];
-require "login.php";
-// OR
-// echo 'Name: ' . $user->getName();
+$_session["session"] = "1";
+header('Location: http://app.ipromo.mx/');

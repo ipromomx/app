@@ -79,7 +79,11 @@ ob_start(); ?>
 			<!-- Page Content -->
 			<div id="page-wrapper">
 				<div class="container-fluid">
-					<?php include("tpl/$tpl.php"); ?>
+					<?php 
+					if ($_session["session"] != "1")  {
+					echo '<a href="<?php '.htmlspecialchars($loginUrl).' " data-icon="gear" data-iconpos="notext">Entrar</a>';
+		
+					}ELSE{include("tpl/$tpl.php"); } ?>
 				</div>
 			</div>
 			<!-- /#page-content -->

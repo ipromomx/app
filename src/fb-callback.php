@@ -2,7 +2,7 @@
 if(!session_id()) {
     session_start();
 }
-require_once 'src/Facebook/autoload.php';
+require_once 'Facebook/autoload.php';
 
 $fb = new \Facebook\Facebook([
   'app_id' => '140873573200308', // Replace {app-id} with your app id
